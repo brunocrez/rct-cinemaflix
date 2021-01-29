@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/images/Logo.png';
-import ButtonLink from './components/ButtonLink';
+import Button from '../Button';
 import './Menu.css';
 
 export default function Menu() {
@@ -9,8 +9,7 @@ export default function Menu() {
             <a href="/">
                 <img className="logo" src={Logo} alt="BRFLIX LOGO" />
             </a>
-
-            <ButtonLink href="/" className="ButtonLink">Novo Vídeo</ButtonLink>
+            <Button as="a" className="ButtonLink" href="/">Novo Vídeo</Button>
         </nav>
     );
 }
